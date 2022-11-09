@@ -1,31 +1,32 @@
-package assesment;
+package Typesofvariables;
 
-import java.util.Scanner;
+//public class Employee {
 
-public class Employee {
+	//public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
-	public static void main(String[] args) {
-		String empname , empdept;
-		int empage;
-		float empsalary;
-		double empyearsalary;
+
+
 		
-		Scanner Sc=new Scanner(System.in);
-		System.out.println("Enter the employee name ");
-		empname = Sc.next();
-		System.out.println("Enter the employee dept ");
-		empdept=Sc.next();
-		System.out.println("Enter the employee age ");
-		empage=Sc.nextInt();
-		System.out.println("Enter the employee salary ");
-		empsalary=Sc.nextFloat();
-		
-		empyearsalary=empsalary *12;
-				
-		System.out.println("The  "+empname+"  year salary is:" +empyearsalary);
-		
-		
-		
+
+		public class Employee{
+			  int b; //instance variable
+			  static int c=10; //static variable
+			   
+			  void display(){
+				  int k;//local 
+			     System.out.println("b="+b);//default value is zero
+			     System.out.println("static data c="+c);
+			     //System.out.println("local variable k="+k); error local variables are not initialized
+			   }
+			   public static void main(String args[]){
+			      //variable declared in the main or any other method is called local variable
+			       int a=10; //a is called local variable
+			       Employee eob=new Employee();//creating an object
+			       System.out.println("b="+eob.b);//default value is zero
+				     System.out.println("static data c="+Employee.c);
+				     System.out.println("static data c="+eob.c);
+				     System.out.println("static data c="+c);
 
 	}
 

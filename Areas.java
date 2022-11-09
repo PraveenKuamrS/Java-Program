@@ -20,16 +20,16 @@ public class Areas {
 	
 	//triangle
 	float x,y,z;
-	float X=1.5f;
-	int Y=3;
-	z=X*Y/2;
+	 x=1.5f;
+	 y=3;
+	z=(x*y)/2;
 	System.out.println("The area of triangle is :" +z );
 	
 	
 	//circle
-	int r,o;
+    float r,o;
 	r=5;
-	o=r*r;
+	o= 3.1459f*r*r;
 	System.out.println("The area of circle is:"+o);
 	
 	
