@@ -1,3 +1,5 @@
+//i was edit this one for test gitbash work or not
+
 package assesment;
 
 import java.util.Scanner;
